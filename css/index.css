@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+.main {
+    min-height: 100vh;
+    max-width: 700px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ddd;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title .main-title {
+    font-weight: 900;
+    font-size: 23px;
+}
+
+.title .square {
+    margin-right: auto;
+    margin-left: 10px;
+    background-color: hsl(219, 85%, 26%);
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.title .small-title {
+    color: #888;
+    font-size: 16px;
+    cursor: pointer
+}
+
+.title .small-title:hover {
+    color: hsl(219, 85%, 30%);
+
+}
+
+.notifications {
+    padding-top: 20px;
+
+}
+
+.notifications .noti {
+
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+.notifications .noti.readed {
+    background: hsl(211, 68%, 94%);
+}
+
+.notifications .noti .avatar {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.notifications .noti .text-noti .para-noti .name {
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.notifications .noti .text-noti .para-noti .name:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.notifications .noti .text-noti .para-noti .noti-msg {
+    color: hsl(219, 12%, 42%);
+    margin-right: 5px;
+
+}
+
+.notifications .noti .text-noti .para-noti .noti-title {
+    color: hsl(219, 85%, 26%);
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+
+
+
+.notifications .noti .text-noti .para-noti .red-sign {
+    color: red;
+    font-size: 10px;
+
+}
+
+.notifications .noti .text-noti .para-noti img {
+    width: 40px;
+
+}
+
+.notifications .noti .text-noti .date-noti {
+    color: #888
+}
+
+.notifications .noti .message {
+    background-color: #fff;
+    box-shadow: 0 0 3px #ccc;
+    padding: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+    color: #777
+}
+
+.notifications .noti .message:hover {
+    background-color: hsl(211, 68%, 94%);
+}
